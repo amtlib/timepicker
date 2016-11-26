@@ -1,0 +1,61 @@
+
+body {
+    background-color: #333;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+*{
+    -webkit-user-drag: none;
+    user-select:none;
+    font-family: Lato;
+    overflow: hidden;
+}
+
+#hours_circle {
+    border-radius: 100%;
+    border:2vw solid black;
+    top: 4.5vw;
+    left: 4.5vw;
+    width: 36vw;
+    height: 36vw;
+    border-top: 2vw solid white;
+    position: absolute;
+    z-index: 99;
+
+}
+
+#minutes_circle {
+    border-radius: 100%;
+    border: 3vw solid black;
+    width: 39vw;
+    height: 39vw;
+    position: absolute;
+    border-top: 3vw solid white;
+    top:2vw;
+    left: 2vw
+}
+
+#hours {
+    position: absolute;
+    top: 18vw;
+    left: 7vw;
+}
+#minutes{
+    position: absolute;
+    top:18vw;
+    left: 29vw;
+}
+#colon{
+    position: absolute;
+    top:18vw;
+    left: 22.5vw;
+}
+
+#container {
+    position: relative;
+    width: 47vw;
+    height: 47vw;
+}
+
+
