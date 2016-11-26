@@ -1,11 +1,17 @@
 $(document).ready(function () {
+    init()
     $('#minutes').css('font-size', $(this).width() / 10 + 'px')
     $('#hours').css('font-size', $(this).width() / 10 + 'px')
     $('#colon').css('font-size', $(this).width() / 10 + 'px')
+    $('#twelve_hours').css('font-size', $(this).width() / 25 + 'px')
+    $('#twentyfour_hours').css('font-size', $(this).width() / 25 + 'px')
+
     $(window).resize(function () {
         $('#minutes').css('font-size', $(this).width() / 10 + 'px')
         $('#hours').css('font-size', $(this).width() / 10 + 'px')
         $('#colon').css('font-size', $(this).width() / 10 + 'px')
+        $('#twelve_hours').css('font-size', $(this).width() / 25 + 'px')
+    $('#twentyfour_hours').css('font-size', $(this).width() / 25 + 'px')
     })
     var box;
     var boxCenter;

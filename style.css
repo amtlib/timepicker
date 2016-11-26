@@ -10,6 +10,7 @@ body {
     user-select:none;
     font-family: Lato;
     overflow: hidden;
+    color: white;
 }
 
 #hours_circle {
@@ -23,6 +24,9 @@ body {
     position: absolute;
     z-index: 99;
 
+}
+.active{
+    background-color: rgba(0,0,0,.6) !important;
 }
 
 #minutes_circle {
@@ -56,6 +60,29 @@ body {
     position: relative;
     width: 47vw;
     height: 47vw;
+
 }
 
 
+
+#twelve_hours {
+    position: absolute;
+    top:13vw;
+    left: 13vw;
+    padding: 5px;
+    border-radius: 1vw;
+    border: 1px solid black;
+    z-index: 100;
+    cursor:pointer;
+}
+
+#twentyfour_hours {
+    position: absolute;
+    top: 13vw;
+    left: 26vw;
+    padding: 5px;
+    border-radius: 1vw;
+    border: 1px solid black;
+    z-index: 100;
+    cursor:pointer;
+}
