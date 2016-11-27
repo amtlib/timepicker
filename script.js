@@ -5,19 +5,21 @@ $(document).ready(function () {
     $('#colon').css('font-size', $(this).width() / 10 + 'px')
     $('#twelve_hours').css('font-size', $(this).width() / 25 + 'px')
     $('#twentyfour_hours').css('font-size', $(this).width() / 25 + 'px')
-
+    $('#am').css('font-size', $(this).width() / 25 + 'px')
+    $('#pm').css('font-size', $(this).width() / 25 + 'px')
     $(window).resize(function () {
         $('#minutes').css('font-size', $(this).width() / 10 + 'px')
         $('#hours').css('font-size', $(this).width() / 10 + 'px')
         $('#colon').css('font-size', $(this).width() / 10 + 'px')
         $('#twelve_hours').css('font-size', $(this).width() / 25 + 'px')
-    $('#twentyfour_hours').css('font-size', $(this).width() / 25 + 'px')
+        $('#twentyfour_hours').css('font-size', $(this).width() / 25 + 'px')
+        $('#am').css('font-size', $(this).width() / 25 + 'px')
+        $('#pm').css('font-size', $(this).width() / 25 + 'px')
     })
     var box;
     var boxCenter;
     var dragged = false;
     var angle;
-
     $('#hours_circle').on('mousedown', function (e) {
         box = $(this);
         boxCenter = [box.offset().left + box.width() / 2, box.offset().top + box.height() / 2];
@@ -37,13 +39,14 @@ $(document).ready(function () {
             box.css({
                 "transform": 'rotate(' + (angle) + 'deg)'
             });
-            angle = angle < 0 ? 180 + (180-Math.abs(angle)) : angle;
-            if(box.attr('id') == 'hours_circle'){
-                $('#hours').text(Math.floor(angle/15).toString().length<2?'0'+Math.floor(angle/15):Math.floor(angle/15));
-            }else{
-                $('#minutes').text(Math.floor(angle/6).toString().length < 2?'0'+Math.floor(angle/6):Math.floor(angle/6));
+            angle = angle < 0 ? 180 + (180 - Math.abs(angle)) : angle;
+            if (box.attr('id') == 'hours_circle') {
+                $('#hours').text(Math.floor(angle / 15).toString().length < 2 ? '0' + Math.floor(angle / 15) : Math.floor(angle / 15));
             }
-            console.log(box.attr('id'),angle)
+            else {
+                $('#minutes').text(Math.floor(angle / 6).toString().length < 2 ? '0' + Math.floor(angle / 6) : Math.floor(angle / 6));
+            }
+            console.log(box.attr('id'), angle)
         }
     });
 })

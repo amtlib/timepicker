@@ -43,7 +43,7 @@ body {
 #hours {
     position: absolute;
     top: 18vw;
-    left: 7vw;
+    left: 8vw;
 }
 #minutes{
     position: absolute;
@@ -53,7 +53,7 @@ body {
 #colon{
     position: absolute;
     top:18vw;
-    left: 22.5vw;
+    left: 23vw;
 }
 
 #container {
@@ -79,10 +79,35 @@ body {
 #twentyfour_hours {
     position: absolute;
     top: 13vw;
-    left: 26vw;
+    left: 29vw;
     padding: 5px;
     border-radius: 1vw;
     border: 1px solid black;
     z-index: 100;
     cursor:pointer;
+}
+
+#am {
+    position: absolute;
+    top:30vw;
+    left: 13vw;
+    padding: 5px;
+    border-radius: 1vw;
+    border: 1px solid black;
+    z-index: 100;
+    cursor: pointer;
+}
+.disabled{
+    color:grey !important;
+    background-color: dimgray !important;
+}
+#pm {
+    position: absolute;
+    top:30vw;
+    left: 29vw;
+    padding: 5px;
+    border-radius: 1vw;
+    border: 1px solid black;
+    z-index: 100;
+    cursor: pointer;
 }
