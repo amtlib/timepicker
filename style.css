@@ -74,6 +74,7 @@ body {
     border: 1px solid black;
     z-index: 100;
     cursor:pointer;
+    transition-duration: .2s;
 }
 
 #twentyfour_hours {
@@ -85,6 +86,7 @@ body {
     border: 1px solid black;
     z-index: 100;
     cursor:pointer;
+    transition-duration: .2s;
 }
 
 #am {
@@ -96,10 +98,10 @@ body {
     border: 1px solid black;
     z-index: 100;
     cursor: pointer;
+    transition-duration: .2s;
 }
 .disabled{
-    color:grey !important;
-    background-color: dimgray !important;
+    opacity: 0 !important;
 }
 #pm {
     position: absolute;
@@ -110,4 +112,8 @@ body {
     border: 1px solid black;
     z-index: 100;
     cursor: pointer;
+    transition-duration: .2s;
+}
+#output{
+    color:black;
 }
